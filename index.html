@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Treehouse Portfolio</title>
+            <link rel="stylesheet" href="css/main.css" />
+            <link rel="stylesheet" href="css/font-awesome.min.css" />
+        </head>
+        <body>
+            <header>
+                <img src="img/me.jpg" alt="" />
+                <h1>My Treehouse Portfolio</h1>
+                <h3>Front-End Web Developer</h3>
+            </header>
+            <main>
+                <article>
+                    <a href="http://h2736000.stratoserver.net:8080/alphabank/index.do"><img src="img/alphabank.png" alt="" /></a>
+                    <span>Java, HTML5, CSS3</span>
+                    <p>The online banking website of Alphabank.</p>
+                </article>
+                <article>
+                    <a href="http://meetdesign.co/portfolio/break/"><img src="img/break.png" alt="" /></a>
+                    <span>Asp.NET Razor, Javascript, HTML5, CSS3</span>
+                    <p>Helps you find music and movies.</p>
+                </article>
+                <article>
+                    <a href="http://meetdesign.co/portfolio/arb/contacts/#!/"><img src="img/contacts.png" alt="" /></a>
+                    <span>AngularJS, Javascript, HTML5, CSS3</span>
+                    <p>Organize your friends with Contacts.</p>
+                </article>
+                <article>
+                    <a href="http://meetdesign.co/portfolio/gelb/"><img src="img/gelb.png" alt="" /></a>
+                    <span>Asp.NET Razor, AngularJS, Javascript, HTML5, CSS3</span>
+                    <p>Helps you find venues in a selected city.</p>
+                </article>
+                <article>
+                    <a href="http://meetdesign.co/portfolio/idm/"><img src="img/idm.png" alt="" /></a>
+                    <span>Asp.NET MVC, SQL Server, Javascript, HTML5, CSS3</span>
+                    <p>The website of the Design Museum.</p>
+                </article>
+                <article>
+                    <a href="http://meetdesign.co/portfolio/pixlr/"><img src="img/pixlr.png" alt="" /></a>
+                    <span>Asp.NET Razor, SQL Server, Javascript, HTML5, CSS3</span>
+                    <p>Online picture gallery.</p>
+                </article>
+                <div class="contact">
+                    <h2>Contact Information</h2>
+                    <strong>Name: </strong>Loukas Anastasiou<br />
+                    <strong>Address: </strong>High Street 100<br />
+                    <strong>City: </strong>Berlin
+                </div>
+            </main>
+            <footer>
+                <div class="inner">
+                    COPYRIGHT 2017 &copy; Loukas Anastasiou
+                    <ul class="social">
+                        <li><a href="mailto:hallo@loukasanast.de"><i class="fa fa-envelope-open"></i></a></li>
+                        <li><a href="https://www.facebook.com/theejohndoe/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/johndoefromx?lang=en"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/whatjohndoesays/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/john-doe/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <script>
+                (function(){
+                    'use strict';
+                    var articles = document.getElementsByTagName('article');
+                    [].forEach.call(articles, function(elem, index){
+                        elem.addEventListener('mouseenter', function(){
+                            elem.querySelector('span').style.opacity = 1;
+                        }, false);
+                        elem.addEventListener('mouseleave', function(){
+                            elem.querySelector('span').style.opacity = 0;
+                        }, false);
+                    });
+                }());
+            </script>
+        </body>
+    </html>
