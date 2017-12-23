@@ -86,14 +86,23 @@ footer li{
     main, footer > .inner{
         width:300px;
     }
+    footer span{
+        display:none;
+    }
 }
 @media (min-width:768px){
     main, footer > .inner{
         width:630px;
     }
+    footer span{
+        display:inline;
+    }
 }
 @media (min-width:1200px){
     main, footer > .inner{
         width:960px;
+    }
+    footer span{
+        display:inline;
     }
 }
