@@ -82,6 +82,10 @@ footer li{
     margin:0 0 0 20px;
     font-size:14px;
 }
+.resize{
+    transform:scale(1.05);
+    transition:transform .2s ease;
+}
 @media (min-width:320px){
     main, footer > .inner{
         width:300px;

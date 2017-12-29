@@ -70,9 +70,11 @@
                     [].forEach.call(articles, function(elem, index){
                         elem.addEventListener('mouseenter', function(){
                             elem.querySelector('span').style.opacity = 1;
+                            elem.querySelector('img').className = 'resize';
                         }, false);
                         elem.addEventListener('mouseleave', function(){
                             elem.querySelector('span').style.opacity = 0;
+                            elem.querySelector('img').className = '';
                         }, false);
                     });
                 }());
